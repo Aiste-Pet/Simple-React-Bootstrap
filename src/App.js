@@ -1,40 +1,44 @@
-import logo from "./logo.svg";
-import Header from "./components/Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ControlledCarousel from "./components/Carousel/Carousel";
+import ItemCarousel from "./components/Carousel/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Intro from "./components/Intro/Intro";
 import ItemCard from "./components/ItemCard/ItemCard";
+import Footer from "./components/Footer/Footer";
+import Navigation from "./components/Header/Header";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Container className="m-0 p-0 w-100">
-        <Row className="m-0 p-0 w-100">
-          <Col sm={8}>
-            <ControlledCarousel />
+      <Navigation />
+      <Container>
+        <Row className="m-0 py-3">
+          <Col sm={12} className="p-0">
+            <ItemCarousel />
           </Col>
-          <Col sm={4}>
+        </Row>
+        <Row>
+          <Col sm={12} className="py-3 text-justify">
             <Intro />
           </Col>
         </Row>
-      </Container>
-      <Container className="my-5">
         <Row>
-          <Col sm={4}>
+          <Col sm={3}>
             <ItemCard />
           </Col>
-          <Col sm={4}>
+          <Col sm={3}>
             <ItemCard />
           </Col>
-          <Col sm={4}>
+          <Col sm={3}>
+            <ItemCard />
+          </Col>
+          <Col sm={3}>
             <ItemCard />
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

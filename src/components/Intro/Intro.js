@@ -1,12 +1,15 @@
 const Intro = () => {
   return (
     <div>
-      <h1>Title</h1>
-      <p>
+      <p class="h2">Title</p>
+      <p class="lead">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
         voluptate aperiam. Corporis dolor eveniet reprehenderit ullam explicabo
         temporibus aliquid necessitatibus provident ut hic. Deleniti voluptas
-        perspiciatis voluptatem. Maiores, quae consequatur!
+        perspiciatis voluptatem. Maiores, quae consequatur! Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Magni veritatis rem hic nemo
+        esse dicta beatae suscipit, quidem porro numquam ex, sequi laboriosam
+        provident. Eius voluptate quisquam iste magni aliquam?
       </p>
     </div>
   );
