@@ -2,7 +2,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function Navigation() {
+function Navigation({ hasLoggedIn, username }) {
+  const loginText = "Signed in as: " + username;
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -14,9 +15,7 @@ function Navigation() {
             <Nav.Link href="#link">Walkthroughs</Nav.Link>
             <Nav.Link href="#link">Reviews</Nav.Link>
             <Nav.Link href="#link">Contacts</Nav.Link>
-            <Navbar.Text>
-              Signed in as: <a href="#login">Someone</a>
-            </Navbar.Text>
+            {hasLoggedIn && <Navbar.Text>{loginText}</Navbar.Text>}
           </Nav>
         </Navbar.Collapse>
       </Container>

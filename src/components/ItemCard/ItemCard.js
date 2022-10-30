@@ -1,20 +1,14 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-function ItemCard() {
+function ItemCard({ game }) {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img
-        variant="top"
-        src="https://i0.wp.com/news.xbox.com/en-us/wp-content/uploads/sites/2/2020/11/06_SeriousSamCollection_X1_ScreenX_1920_x_1080.jpg?resize=1920%2C1080&ssl=1"
-      />
+      <Card.Img variant="top" src={game.imageLink} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title>{game.name}</Card.Title>
+        <Card.Text>{game.description}</Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
   );

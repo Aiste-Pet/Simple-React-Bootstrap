@@ -1,8 +1,8 @@
-const Intro = () => {
+function Intro() {
   return (
     <div>
-      <p class="h2">Title</p>
-      <p class="lead">
+      <p className="h2">Title</p>
+      <p className="lead">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
         voluptate aperiam. Corporis dolor eveniet reprehenderit ullam explicabo
         temporibus aliquid necessitatibus provident ut hic. Deleniti voluptas
@@ -13,6 +13,6 @@ const Intro = () => {
       </p>
     </div>
   );
-};
+}
 
 export default Intro;
