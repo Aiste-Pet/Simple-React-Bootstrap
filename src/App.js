@@ -6,6 +6,7 @@ import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 import Games from "./pages/Games/Games";
 import Register from "./pages/Register/Register";
+import NotFound from "./pages/NotFound/NotFOund";
 
 function App() {
   const navigationLinks = [
@@ -21,6 +22,7 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
